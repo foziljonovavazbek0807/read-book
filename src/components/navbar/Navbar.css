@@ -51,7 +51,7 @@
 }
 
 @keyframes liradius {
-    0% {
+    25% {
         border-left: 1px solid #00ffff;
     }
     50% {
