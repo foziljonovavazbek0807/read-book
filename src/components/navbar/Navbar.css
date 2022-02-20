@@ -1,0 +1,66 @@
+.Navbar {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 100px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navbar .Logo {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #00ffff;
+}
+
+.Logo b {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;   
+    color: #00ffff;
+}
+
+.Logo img {
+    width: 80px;
+    height: 60px;
+}
+
+.Navbar .Menu {
+    display: flex;
+    align-items: center;
+}
+
+.Menu li {
+    margin: 0 20px;
+}
+
+.Menu li a {
+    font-size: 18px;
+    opacity: 0.7;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+    border: 1px solid #17202a;
+}
+
+.Menu li a:hover {
+    opacity: 1;
+    animation: 1.5s liradius infinite;
+}
+
+@keyframes liradius {
+    0% {
+        border-left: 1px solid #00ffff;
+    }
+    50% {
+        border-top: 1px solid #00ffff;
+    }
+    75% {
+        border-right: 1px solid #00ffff;
+    }
+    100% {
+        border-bottom: 1px solid #00ffff;
+    }
+}
