@@ -11,14 +11,14 @@
 .Navbar .Logo {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #00ffff;
+    border-bottom: 2px solid #fff;
 }
 
 .Logo b {
     font-size: 30px;
     font-weight: bold;
     margin-top: 20px;   
-    color: #00ffff;
+    color: #fff;
 }
 
 .Logo img {
@@ -40,7 +40,7 @@
     opacity: 0.7;
     font-weight: bold;
     padding: 10px 15px;
-    border-radius: 25px;
+    border-radius: 10px;
     transition: 0.5s;
     border: 1px solid #17202a;
 }
@@ -48,6 +48,36 @@
 .Menu li a:hover {
     opacity: 1;
     animation: 1.5s liradius infinite;
+}
+
+.Navbar .BtnInter {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: #76448ad8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.BtnInter .InterIcon {
+    font-size: 20px;
+}
+
+.BtnInter p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.Navbar .BtnInter:hover {
+    background-color: #76448a;
+}
+
+.Navbar .BtnInter:active {
+    animation: 0.2s btnclick forwards;
 }
 
 @keyframes liradius {
@@ -62,5 +92,14 @@
     }
     100% {
         border-bottom: 1px solid #00ffff;
+    }
+}
+
+@keyframes btnclick {
+    from {
+        transform: scale(0.95);
+    }
+    to {
+        transform: scale(1);
     }
 }

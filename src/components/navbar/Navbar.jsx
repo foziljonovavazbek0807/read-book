@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { FaSignInAlt } from 'react-icons/fa';
 
 function Navbar() {
   return (
@@ -14,8 +15,11 @@ function Navbar() {
             <li><a href="#!">Home</a></li>
             <li><a href="#!">Home</a></li>
             <li><a href="#!">Home</a></li>
-            <li><a href="#!">Home</a></li>
         </ul>
+        <button className="BtnInter">
+          <FaSignInAlt className="InterIcon"/>
+          <p>Register</p>
+        </button>
     </div>
   )
 }
