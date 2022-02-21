@@ -6,6 +6,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #17202a;
+    position: sticky;
+    top: 0;
+    z-index: 100;   
 }
 
 .Navbar .Logo {
@@ -79,6 +83,16 @@
 .Navbar .BtnInter:active {
     animation: 0.2s btnclick forwards;
 }
+
+
+
+
+
+
+
+
+
+
 
 @keyframes liradius {
     25% {
