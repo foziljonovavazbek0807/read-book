@@ -1,4 +1,82 @@
 .Header {
-    width: 100%;
-    padding: 0 100px;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  background-color: #17202a;
+}
+
+.Header .header_slider {
+  width: 35%;
+}
+
+.Header .header_slider .header_slide-box {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  padding: 100px;
+}
+
+.Header .header_slider .header_slide-box img {
+  width: 100%;
+}
+
+.Header .header_side {
+  width: 55%;
+  padding: 20px 30px;
+  border-left: 5px solid #fff;
+}
+
+.Header .header_side b {
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.Header .header_side h2 {
+  font-size: 40px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.Header .header_side .header_btn_block {
+    display: flex;
+    gap: 20px;
+}
+
+.Header .header_side .header_btn_block a {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.Header .header_side .header_btn_block a .cart_icon {
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+
+.Header .header_side .header_btn_block a:nth-child(1) {
+    background-color: #ff0000;
+}
+
+.Header .header_side .header_btn_block a:nth-child(2) {
+    background-color: #008000;
+}
+
+.Header .header_side .header_btn_block a:hover {
+    opacity: 1;
 }

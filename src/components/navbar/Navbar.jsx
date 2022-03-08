@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { FaSignInAlt } from 'react-icons/fa';
+import { IoIosSearch } from 'react-icons/io';
 
 function Navbar() {
   return (
@@ -10,12 +11,10 @@ function Navbar() {
             <img src="../../images/web-logo.png" alt="logo"/>
             <b>BOOK</b>
         </a>
-        <ul className="Menu">
-            <li><a href="#!">Home</a></li>
-            <li><a href="#!">Home</a></li>
-            <li><a href="#!">Home</a></li>
-            <li><a href="#!">Home</a></li>
-        </ul>
+        <form action="#!" className="search_input">
+          <input type="text" placeholder="Search" />
+          <IoIosSearch className="search_icon"/>
+        </form>
         <button className="BtnInter">
           <FaSignInAlt className="InterIcon"/>
           <p>Register</p>
@@ -24,4 +23,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;

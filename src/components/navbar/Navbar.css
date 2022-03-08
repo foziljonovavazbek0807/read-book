@@ -1,119 +1,115 @@
 .Navbar {
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 10px 100px;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #17202a;
-    position: sticky;
-    top: 0;
-    z-index: 100;   
+  width: 100%;
+  overflow-x: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px 100px 0 100px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #17202a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .Navbar .Logo {
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #fff;
 }
 
 .Logo b {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 20px;   
-    color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fff;
 }
 
 .Logo img {
-    width: 80px;
-    height: 60px;
+  width: 80px;
+  height: 60px;
 }
 
-.Navbar .Menu {
+.Navbar .search_input {
+    width: 60%;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-.Menu li {
-    margin: 0 20px;
-}
-
-.Menu li a {
-    font-size: 18px;
-    opacity: 0.7;
-    font-weight: bold;
-    padding: 10px 15px;
+.Navbar .search_input input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 8px 8px 8px 40px;
     border-radius: 10px;
-    transition: 0.5s;
-    border: 1px solid #17202a;
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    outline: none;
 }
 
-.Menu li a:hover {
-    opacity: 1;
-    animation: 1.5s liradius infinite;
+.Navbar .search_input .search_icon {
+    position: absolute;
+    font-size: 22px;
+    left: 10px;
+    top: 10px;
 }
 
 .Navbar .BtnInter {
-    padding: 10px 25px;
-    border-radius: 10px;
-    border: none;
-    background-color: #76448ad8;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    cursor: pointer;
-    transition: 0.5s;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #008000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  gap: 15px;
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
 .BtnInter .InterIcon {
-    font-size: 20px;
+  font-size: 20px;
+  margin-bottom: 2px;
 }
 
 .BtnInter p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 10px;
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 1px;
 }
 
 .Navbar .BtnInter:hover {
-    background-color: #76448a;
+  opacity: 1;
 }
 
 .Navbar .BtnInter:active {
-    animation: 0.2s btnclick forwards;
+  animation: 0.2s btnclick forwards;
 }
 
-
-
-
-
-
-
-
-
-
-
 @keyframes liradius {
-    25% {
-        border-left: 1px solid #00ffff;
-    }
-    50% {
-        border-top: 1px solid #00ffff;
-    }
-    75% {
-        border-right: 1px solid #00ffff;
-    }
-    100% {
-        border-bottom: 1px solid #00ffff;
-    }
+  25% {
+    border-left: 1px solid #00ffff;
+  }
+  50% {
+    border-top: 1px solid #00ffff;
+  }
+  75% {
+    border-right: 1px solid #00ffff;
+  }
+  100% {
+    border-bottom: 1px solid #00ffff;
+  }
 }
 
 @keyframes btnclick {
-    from {
-        transform: scale(0.95);
-    }
-    to {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
 }
