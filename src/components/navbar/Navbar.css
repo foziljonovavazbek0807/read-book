@@ -20,96 +20,63 @@
 }
 
 .Logo b {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   margin-top: 20px;
   color: #fff;
 }
 
 .Logo img {
-  width: 80px;
-  height: 60px;
+  width: 70px;
+  height: 50px;
 }
 
 .Navbar .search_input {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .Navbar .search_input input {
-    width: 100%;
-    background-color: transparent;
-    border: 1px solid #fff;
-    padding: 8px 8px 8px 40px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    outline: none;
-}
-
-.Navbar .search_input .search_icon {
-    position: absolute;
-    font-size: 22px;
-    left: 10px;
-    top: 10px;
-}
-
-.Navbar .BtnInter {
-  padding: 10px 25px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 110px 10px 40px;
   border-radius: 10px;
-  border: none;
-  background-color: #008000;
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  outline: none;
+  font-family: sans-serif;
+}
+
+.Navbar .search_input .btn_search {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  border-radius: 0 10px 10px 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  color: #000;
   cursor: pointer;
-  gap: 15px;
   opacity: 0.8;
   transition: 0.5s;
 }
 
-.BtnInter .InterIcon {
+.Navbar .search_input .search_icon {
+  position: absolute;
+  left: 12px;
   font-size: 20px;
-  margin-bottom: 2px;
+  font-weight: bold;
 }
 
-.BtnInter p {
-  font-size: 18px;
-  font-weight: lighter;
-  letter-spacing: 1px;
-}
-
-.Navbar .BtnInter:hover {
+.Navbar .search_input .btn_search:hover {
   opacity: 1;
-}
-
-.Navbar .BtnInter:active {
-  animation: 0.2s btnclick forwards;
-}
-
-@keyframes liradius {
-  25% {
-    border-left: 1px solid #00ffff;
-  }
-  50% {
-    border-top: 1px solid #00ffff;
-  }
-  75% {
-    border-right: 1px solid #00ffff;
-  }
-  100% {
-    border-bottom: 1px solid #00ffff;
-  }
-}
-
-@keyframes btnclick {
-  from {
-    transform: scale(0.95);
-  }
-  to {
-    transform: scale(1);
-  }
 }
