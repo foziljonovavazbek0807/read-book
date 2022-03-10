@@ -13,26 +13,26 @@
   z-index: 100;
 }
 
-.Navbar .Logo {
+.Navbar .logo {
   display: flex;
   align-items: center;
   border-bottom: 2px solid #fff;
 }
 
-.Logo b {
+.logo b {
   font-size: 24px;
   font-weight: bold;
   margin-top: 20px;
   color: #fff;
 }
 
-.Logo img {
+.logo img {
   width: 70px;
   height: 50px;
 }
 
 .Navbar .search_input {
-  width: 50%;
+  width: 65%;
   display: flex;
   align-items: center;
   position: relative;
@@ -45,25 +45,23 @@
   padding: 10px 110px 10px 40px;
   border-radius: 10px;
   font-size: 16px;
-  font-weight: lighter;
+  font-weight: bold;
   letter-spacing: 1px;
   outline: none;
-  font-family: sans-serif;
 }
 
-.Navbar .search_input .btn_search {
+.Navbar .search_input button {
   position: absolute;
   right: 0;
   background-color: #fff;
   border: 1px solid #fff;
-  padding: 10px 15px;
+  padding: 10px 30px;
   border-radius: 0 10px 10px 0;
   display: flex;
   align-items: center;
   font-size: 16px;
-  font-weight: lighter;
+  font-weight: bold;
   letter-spacing: 1px;
-  font-family: sans-serif;
   color: #000;
   cursor: pointer;
   opacity: 0.8;
@@ -77,6 +75,10 @@
   font-weight: bold;
 }
 
-.Navbar .search_input .btn_search:hover {
+.Navbar .search_input button:hover {
   opacity: 1;
+}
+
+.Navbar .bascket_icon {
+  font-size: 40px;
 }

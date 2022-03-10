@@ -23,7 +23,7 @@
 }
 
 .Header .header_side b {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: lighter;
   letter-spacing: 1px;
   color: #008080;
@@ -49,25 +49,25 @@
   align-items: center;
   gap: 5px;
   font-size: 20px;
+  font-weight: bold;
   opacity: 0.8;
   transition: 0.5s;
-  transform: scale(0.98);
 }
 
 .Header .header_side .header_btn_block a .cart_icon {
   font-size: 25px;
-  margin-bottom: 3px;
+  font-weight: bold;
 }
 
 .Header .header_side .header_btn_block a:nth-child(1) {
-  background-color: #ff0000;
+  background-color: #008000;
 }
 
 .Header .header_side .header_btn_block a:nth-child(2) {
-  background-color: #008000;
+  background-color: #ff0000;
 }
 
 .Header .header_side .header_btn_block a:hover {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1.05);
 }

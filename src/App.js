@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/header/Header";
 import Navbar from "./components/navbar/Navbar";
+import Section from "./components/section/Section";
 import Whatwe from "./components/whatwe/Whatwe";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar/>
       <Header/>
       <Whatwe/>
+      <Section/>
     </div>
   );
 }
